@@ -12,14 +12,12 @@ const allowedChannels = ["UC1D3Fy0L0aoI0OfUEZnWy5A", //JJP
 
 // define a route handler for the default home page
 app.get("/", (req, res) => {
-    res.send("Hello world!");
+    res.send("Proxy API to retrieve YouTube data.");
 });
-app.get("/api/envs/:keyName", (req, res) => {
-    res.send("Hello world!" + process.env[req.params.keyName]);
-});
-getConfigValueFromEnv = function (key) {
-    "YTAPIKey"
-}
+// app.get("/api/envs/:keyName", (req, res) => {
+//     res.send("Hello world!" + process.env[req.params.keyName]);
+// });
+
 app.get("/api/channels/:channelId/videos", async (req, res) => {
 
     const channelId = req.params.channelId;
@@ -36,11 +34,11 @@ app.get("/api/channels/:channelId/videos", async (req, res) => {
     else {
         res.status(422).json({status:422,message:"This API doesn't support all the channels due to API limits."});
     }
-    // res.send([{
+    // future Format [{
     //     "title": url,
     //     "description": "Test desc",
     //     "id": "345"
-    // }]);
+    // }]
 });
 // start the Express server
 app.listen(port, () => {
