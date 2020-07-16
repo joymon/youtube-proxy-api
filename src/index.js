@@ -6,7 +6,9 @@ const port = process.env.PORT || 8080; // default port to listen
 app.get( "/", ( req, res ) => {
     res.send( "Hello world!" );
 } );
-
+app.get( "/api/envs/:keyName", ( req, res ) => {
+    res.send( "Hello world!"+ process.env[req.params.keyName] );
+} );
 // start the Express server
 app.listen( port, () => {
     console.log(process.env.PORT);
