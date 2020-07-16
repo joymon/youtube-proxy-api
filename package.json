@@ -24,5 +24,8 @@
   "homepage": "https://github.com/joymon/youtube-proxy-api#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "engines": {
+    "node": "12.13"
+  }  
 }
