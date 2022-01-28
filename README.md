@@ -14,4 +14,4 @@ Currently hosted at [Heroku](https://youtube-proxy-api.herokuapp.com/)
 Sample API URL to get Channel videos
 [https://youtube-proxy-api.herokuapp.com/api/channels/UCzYqSifCwLYpmgRxvNo7BzA/videos](https://youtube-proxy-api.herokuapp.com/api/channels/UCzYqSifCwLYpmgRxvNo7BzA/videos)
 
-`Due to APi limits, the above deployment works only for certain channels. If you need to access for different channel, better host yourselves :)`
+> Due to APi limits, the above deployment works only for certain channels. If you need to access for different channel, better host yourselves.
