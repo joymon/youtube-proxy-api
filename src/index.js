@@ -6,8 +6,10 @@ var request = require('request');
 const port = process.env.PORT || 8080; // default port to listen
 const YTAPIKey = process.env.YTAPIKey
 
-const allowedChannels = ["UC1D3Fy0L0aoI0OfUEZnWy5A", //JJP
-    "UCzYqSifCwLYpmgRxvNo7BzA", //J3D
+const allowedChannels = [
+    "UC1D3Fy0L0aoI0OfUEZnWy5A", //JJP
+    "UCLjN4YxvXZDIXtXe_GJnY4g", // EVP
+     "UCzYqSifCwLYpmgRxvNo7BzA", //J3D
     "UC78wYrq_keVaDV8STReHRxg"];// JVC
 
 // define a route handler for the default home page
