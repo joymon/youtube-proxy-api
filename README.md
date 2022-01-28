@@ -13,7 +13,7 @@ Sample API URL to get Channel videos
 
 Currently it returns 3 records
 
-```JSON
+```JavaScript
 [
     {
         id: "P7kBUPIsefg",
@@ -44,6 +44,7 @@ Currently it returns 3 records
 
 NodeJS application. You can host it anywhere. 
 
-Currently hosted at [Heroku](https://youtube-proxy-api.herokuapp.com/)
+- Currently hosted at [Heroku](https://youtube-proxy-api.herokuapp.com/)
+- It uses the Heroku pipeline to deploy.
 
 > Due to APi limits, the above deployment works only for certain channels. If you need to access for different channel, better host yourselves.
