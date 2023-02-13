@@ -14,7 +14,7 @@ const allowedChannels = [
 
 // define a route handler for the default home page
 app.get("/", (req, res) => {
-    res.send("Proxy API to retrieve YouTube data.");
+    res.send("Proxy API to retrieve YouTube data. Usage format <i>/api/channels/:channelId/videos</i>");
 });
 // app.get("/api/envs/:keyName", (req, res) => {
 //     res.send("Hello world!" + process.env[req.params.keyName]);
